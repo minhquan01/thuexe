@@ -40,6 +40,12 @@ html {
     background-position: left;
 }
 
+.header__logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .header__top-right--list {
     list-style: none;
     display: flex;
@@ -129,7 +135,7 @@ html {
     height: 100vh;
     position: relative;
     min-height: calc(100vh - 72px);
-    background: url(../img/MOTOGO-cho-thue-xe-may-Ha-Noi.jpg) no-repeat;
+    background: url(../img/background.jpg) no-repeat;
     background-position: 50%;
     object-fit: cover;
 }
@@ -221,6 +227,10 @@ label {
     object-fit: cover;
     width: 285px;
     height: 205px;
+}
+
+.inner span {
+    text-align: center;
 }
 
 .inner {
@@ -598,6 +608,7 @@ label {
     max-width: 90%;
     font-size: 20px;
     margin-left: -12px;
+    cursor: pointer;
 }
 
 .facebook {
