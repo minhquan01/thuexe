@@ -4,7 +4,7 @@
     }
     .search-results-details {
         top: calc(91% + 10px);
-        transform: translateX(95%);
+        transform: translateX(90%);
     }
     .search-suggest-button--btn {
         width: 120px;
