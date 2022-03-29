@@ -141,6 +141,8 @@ section#search-suggest-button {
     width: 80%;
     margin-bottom: 33%;
     object-fit: cover;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .item-info {
