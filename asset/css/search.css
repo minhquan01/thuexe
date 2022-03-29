@@ -175,7 +175,7 @@ section#search-suggest-button {
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
-    transition-delay: 0.05s;
+    transition-delay: 0.3s;
 }
 
 .item__action button {
