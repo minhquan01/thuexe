@@ -200,11 +200,11 @@ section#search-suggest-button {
 }
 
 .item-moto:hover .item__title {
-    transform: translate(-54px, -40px);
+    transform: translate(-38px, -40px);
 }
 
 .item-moto:hover .item__price {
-    transform: translate(-77px, -40px);
+    transform: translate(-33px, -40px);
 }
 
 .item-moto:hover .item__action {

@@ -1,14 +1,14 @@
-const nameItems = document.querySelectorAll('.name-item');
+const nameItems = document.querySelectorAll('.item__title');
 const searchInput = document.querySelector('.search-input');
 const itemMotos = document.querySelectorAll('.item-moto');
 const buttonSuggests = document.querySelectorAll('.search-suggest-button--btn');
-const priceItems = document.querySelectorAll('.price-item');
+const priceItems = document.querySelectorAll('.item__price');
 
 // Tìm Kiếm
 searchInput.onkeyup = () => {
     let valueItem = searchInput.value.toLowerCase();
     itemMotos.forEach((ele) => {
-        let nameMoto = ele.querySelector('.item-info').firstElementChild.textContent;
+        let nameMoto = ele.querySelector('.item__title').textContent;
         if(nameMoto.toLowerCase().indexOf(valueItem) !== -1) {
             ele.style.display = 'block';
         } else {
@@ -48,7 +48,7 @@ buttonSuggests.forEach((suggest) => {
     
         itemMotos.forEach((ele) => {
             if(ele.dataset.item === nameSuggest || nameSuggest === 'all'){
-                ele.style.display = 'block';
+                ele.style.display = 'flex';
             }else {
                 ele.style.display = 'none';
             }
