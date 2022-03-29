@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm Kiếm Xe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/grid.css">
+    <link rel="stylesheet" href="./asset/font/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./asset/css/search.css">
+</head>
+<body>
+    <!-- Thanh Đầu -->
+    <div class="header" >
+        <div class="nav" id="nav">
+            <div class="grid wide">
+                <div class="header__top">
+                    <div class="header__top-left">
+                        <div class="header__top-left--logo">
+                            <a href="/" class="header__logo">
+                                <img src="./asset/img/logo/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__top-right">
+                        <ul class="header__top-right--list">
+                            <a href="./index.html" class="header__top-right--item">TRANG CHỦ</a>
+                            <li class="header__top-right--item">BẢNG GIÁ</li>
+                            <li class="header__top-right--item list-policy">CHÍNH SÁCH
+                                <i class="fa-solid fa-angle-down"></i>
+                                <ul class="subnav-policy">
+                                    <li class="item-policy">CHÍNH SÁCH THUÊ XE MÁY</li>
+                                    <li class="item-policy">CHÍNH SÁCH KHÁCH HÀNG THÂN THIẾT</li>
+                                </ul>
+                            </li>
+                            <li class="header__top-right--item">GIỚI THIỆU</li>
+                            <li class="header__top-right--item">LIÊN HỆ</li>
+                            <a href="./search.html" class="header__top-right--item list-tour">TÌM KIẾM XE
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <li class="header__top-right--item">Đăng Ký</li>
+                            <li class="header__top-right--item">Đăng Nhập</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="search-header">
+            <div class="search-landing-header-container">
+                <div class="search-image-container">
+                    <img src="./asset/img/img-search/wall.jpg" alt="">
+                </div>
+                <div class="search-landing-image-text">
+                    <h1 class="search-landing-heading">TBE</h1>
+                    <p class="search-landing-heading-text">50,102+ người đã sử dụng dịch vụ của bên TBE</p>
+                </div>
+            </div>
+            <form action="" class="search-results-details">
+                <div class="search-input-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" class="search-input" placeholder="Tìm kiếm xe">
+                </div>
+            </form>
+            <section id="search-suggest-button">
+                <button type="button" class="search-suggest-button--btn active" data-search="all">Tất Cả</button>
+                <button type="button" class="search-suggest-button--btn" data-search="honda">Honda</button>
+                <button type="button" class="search-suggest-button--btn" data-search="piaggio">Piaggio</button>
+                <button type="button" class="search-suggest-button--btn" data-search="suzuki">Suzuki</button>
+                <button type="button" class="search-suggest-button--btn" data-search="sym">Sym</button>
+                <button type="button" class="search-suggest-button--btn" data-search="yamaha">Yamaha</button>
+            </section>
+        </div>
+        <div class="search-container">
+            <div class="search-container-data">
+                <div class="grid wide">
+                    <div class="box-item">
+                        <!-- Honda -->
+                        <div class="item-moto" data-item="honda">
+                            <img src="./asset/img/img-search/Honda/4514790_Xe_Tinhte_SH_2.jpg" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">SH</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                        <div class="item-moto" data-item="honda">
+                            <img src="./asset/img/img-search/Honda/Blade110cc.png" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">Blade 110cc</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                        <div class="item-moto" data-item="honda">
+                            <img src="./asset/img/img-search/Honda/chi-tiet-xe-may-honda-wave-125i-2017-gia-32-trieu.jpg" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">Honda Wave 125i</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                        <div class="item-moto" data-item="honda">
+                            <img src="./asset/img/img-search/Honda/danh-gia-honda-air-blade-2015-gia-xe-va-chi-tiet-hinh-anh-457-1420225983-54a6edbf31871.jpg" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">Air blade 2015</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                        <!-- Piaggio -->
+                        <div class="item-moto" data-item="piaggio">
+                            <img src="./asset/img/img-search/Piaggio/liberty u23.png" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">Liberty</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                        <div class="item-moto" data-item="piaggio">
+                            <img src="./asset/img/img-search/Piaggio/medleyABS 150.png" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">Meley ABS 150</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                        <div class="item-moto" data-item="piaggio">
+                            <img src="./asset/img/img-search/Piaggio/medley abs 125.png" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">Meley ABS 125</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                        <div class="item-moto" data-item="piaggio">
+                            <img src="./asset/img/img-search/Piaggio/medley abs se.png" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">Meley ABS SE</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                        <!-- Suzuki -->
+                        <div class="item-moto" data-item="suzuki">
+                            <img src="./asset/img/img-search/Suzuki/revo110.jpg" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">Revo</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                        <div class="item-moto" data-item="suzuki">
+                            <img src="./asset/img/img-search/Suzuki/address110fi.jpg" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">Address 110Fi</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                        <div class="item-moto" data-item="suzuki">
+                            <img src="./asset/img/img-search/Suzuki/axelo125.jpg" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">Axelo 125</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                        <div class="item-moto" data-item="suzuki">
+                            <img src="./asset/img/img-search/Suzuki/GD110HU.jpg" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">GD110HU</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                        <!-- Sym -->
+                        <div class="item-moto" data-item="sym">
+                            <img src="./asset/img/img-search/Sym/Attila-V Smart Idle.png" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">Attila-V Smart Idle</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                        <div class="item-moto" data-item="sym">
+                            <img src="./asset/img/img-search/Sym/elizabeth.png" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">Elizabeth</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                        <div class="item-moto" data-item="sym">
+                            <img src="./asset/img/img-search/Sym/galaxy-sr115.png" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">Galaxy Sr115</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                        <div class="item-moto" data-item="sym">
+                            <img src="./asset/img/img-search/Sym/husky-classic125.png" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">Husky Classic125</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                        <!-- Yamaha -->
+                        <div class="item-moto" data-item="yamaha">
+                            <img src="./asset/img/img-search/Yamaha/mt03.png" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">Yamaha MT-03</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                        <div class="item-moto" data-item="yamaha">
+                            <img src="./asset/img/img-search/Yamaha/Grande Deluxepng.png" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">Grande Deluxe</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                        <div class="item-moto" data-item="yamaha">
+                            <img src="./asset/img/img-search/Yamaha/exciter 150 RC.png" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">Exciter 150 RC</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                        <div class="item-moto" data-item="yamaha">
+                            <img src="./asset/img/img-search/Yamaha/Janus Standard.png" alt="">
+                            <div class="item-info">
+                                <h1 class="name-item">Janus Standard</h1>
+                                <h1 class="price-item">100.000₫</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 id="showtext"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+    <div class="footer">
+        <div class="grid wide">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="col l-3">
+                        <div class="widget">
+                            <p class="widget-title">
+                                Liên hệ					</p>
+                            <div class="widget-content">
+                                <p>TBE là dịch vụ cho thuê xe máy tự lái chuyên nghiệp tại Việt Nam.</p>
+                                <p><i class="fa-solid fa-phone"></i>Tổng đài (24/24H): <a href="/">0397 135 609</a></p>
+                                <p><i class="fa-solid fa-envelope"></i><a href="/">phanvanhieu2001.yt@gmail.com</a></p>
+                                <p><i class="fa-solid fa-clock"></i>Thứ Hai - Chủ Nhật: 8:00 - 21:00</p>
+                                <ul class="social-link">
+                                    <li>
+                                        <a href="https://www.facebook.com/hieu.phanvan.11111111111111111">
+                                            <i class="fa-brands fa-facebook-square facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li><i class="fa-brands fa-instagram instagram"></i></li>
+                                    <li><i class="fa-brands fa-linkedin-in linkedin"></i></li>
+                                    <li><i class="fa-brands fa-twitter twitter"></i></li>
+                                    <li><i class="fa-brands fa-pinterest pinterest"></i></li>
+                                    <li><i class="fa-brands fa-youtube youtube"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4"><div class="widget">
+                        <p class="widget-title">
+                            Về TBE					</p>
+                        <div class="widget-content">
+                            <p>TBE là dịch vụ cho thuê xe máy tự lái chuyên nghiệp tại Việt Nam.</p>
+                            <p> Chính sách & Thủ tục thuê xe</p>
+                            <p>Chính sách bảo mật thông tin cá nhân</p>
+                            <p>FAQs</p>
+                            <p> Liên hệ, hợp tác</p>
+                            <p class="widget-text">
+                                
+								Chủ đề nội dung website						
+                            </p>
+                            <p>
+                                <a href="/">Thuê xe máy</a>
+                                |
+                                <a href="/">Homestay</a>
+                                |
+                                <a href="/">Resort nghỉ dưỡng</a>
+                                |
+                                <a href="/">Phượt</a>
+                                |
+                                <a href="/">Du lịch</a>
+                            </p>
+                        </div>
+                    </div></div>
+                    <div class="col l-5">
+                        <div class="widget">
+                            <p class="widget-title">
+                                Địa Điểm				</p>
+                            <div class="widget-content">
+                                <p class="widget-text">
+                                    <a href="/">Thuê Xe Máy Ngũ Hành Sơn</a>
+                                </p>
+                                <p>149 Chương Dương</p>
+                                <p>219 Lê Văn Hiến</p>
+                                <p class="widget-text">
+                                    <a href="/">Thuê Xe Máy Sơn Trà</a>
+                                </p>
+                                <p>173 Võ Nguyên Giáp</p>
+                                <p class="widget-text">
+                                    <a href="/">Thuê Xe Máy Liên Chiểu</a>
+                                </p>
+                                <p>19 Ngô Văn Sở</p>
+                                <p class="widget-text">
+                                    <a href="/">Thuê Xe Máy Cẩm Lệ</a>
+                                </p>
+                                <p>26 Đô Đốc Bảo</p>
+                                <p class="link">
+                                    <a href="/">
+                                        <img src="./asset/img/img-link/20150827110756-dathongbao-min.png" style="width: 150px; height: 57px;" alt="">
+                                    </a>
+                                    <a href="/"><img src="./asset/img/img-link/dmca_protected_sml_120n.png" style="width: 121px; height: 24px;"alt=""></a>
+                                    <a href="/"><img src="./asset/img/img-link/88x31.png" alt=""></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="copyright-text">
+                <p>
+                    © 2022 - Bản quyền thuộc về Phan Văn Hiếu 
+                </p>
+            </div>
+        </div>
+    </div>
+
+        <script src="./app.js"></script>
+        <script src="./search.js"></script>
+</body>
+</html>
