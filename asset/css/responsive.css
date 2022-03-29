@@ -1,0 +1,12 @@
+@media (max-width: 1400px) {
+    .search-input-container {
+        width: 470px;
+    }
+    .search-results-details {
+        top: calc(91% + 10px);
+        transform: translateX(95%);
+    }
+    .search-suggest-button--btn {
+        width: 120px;
+    }
+}
