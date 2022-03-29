@@ -100,16 +100,16 @@ section#search-suggest-button {
 }
 
 .search-suggest-button--btn.active {
-    background-color: rgb(167, 175, 182);
+    background-color: rgb(255, 189, 15);
     color: #fff;
 }
 
 .search-suggest-button--btn.active:hover {
-    background-color: rgb(167, 175, 182);
+    background-color: rgb(255, 189, 15);
 }
 
 .search-suggest-button--btn:hover {
-    background-color: rgb(167, 175, 182, .4);
+    background-color: rgb(255, 189, 15, .4);
 }
 
 .wrap{
@@ -125,14 +125,28 @@ section#search-suggest-button {
 
 .item-moto {
     background-color: #fff;
-    box-shadow: 0 0px 4px rgb(0, 0, 0, 0.4);
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.4);
     border-radius: 6px;
     width: calc(23% + 4px);
     margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+    position: relative;
 }
 
 .item-moto img {
-    width: 70%;
+    width: 80%;
+    margin-bottom: 33%;
+    object-fit: cover;
+}
+
+.item-info {
+    position: absolute;
+    top: 74%;
+    left: 7%;
 }
 
 .name-item {
@@ -141,8 +155,107 @@ section#search-suggest-button {
 
 .price-item {
     font-size: 20px;
-    background-color: red;
-    width: 100px;
+    background-color: #000;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 6px 16px;
+    width: 121px;
+    height: 38px;
+    color: rgb(255, 255, 255);
+    transition: 0.4s;
+}
+
+.price-item:hover {
+    color: rgb(255, 193, 7);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.text-pay {
+    display: none;
+}
+
+.price-item:hover > .text-pay {
+    display: block;
+}
+
+.price-item:hover > .text-price {
+    display: none;
+}
+
+.price-item span {
+    display: block;
+    position: absolute;
+    background-color: rgb(255, 189, 15);
+}
+
+.price-item span:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.price-item:hover span:nth-child(1) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.price-item span:nth-child(2) {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.price-item:hover span:nth-child(2) {
+    transform: scaleY(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.price-item span:nth-child(3) {
+    right:0;
+    bottom:0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    transition-delay:0.4s;
+}
+
+.price-item:hover span:nth-child(3) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+    transition-delay:0.4s;
+}
+
+.price-item span:nth-child(4) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+    transition-delay:0.5s;
+}
+
+.price-item:hover span:nth-child(4) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+    transition-delay:0.5s;
 }
 
 #showtext {
