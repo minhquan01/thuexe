@@ -239,6 +239,18 @@ section#search-suggest-button {
   top: 20%;
   margin: auto;
   border-radius: 6px;
+  animation: form ease-in 0.3s;
+}
+
+@keyframes form {
+    from{
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .form__heading {
