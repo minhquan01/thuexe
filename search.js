@@ -3,6 +3,15 @@ const searchInput = document.querySelector('.search-input');
 const itemMotos = document.querySelectorAll('.item-moto');
 const buttonSuggests = document.querySelectorAll('.search-suggest-button--btn');
 const priceItems = document.querySelectorAll('.item__price');
+const openModals = document.querySelectorAll('.open__modal');
+const modal = document.querySelector('.modal');
+const closeModal = document.querySelector('.form__close');
+const btnSubmit = document.querySelector('.form__submit');
+const modalMessage = document.querySelector('.modal__message');
+const successClose = document.querySelector('.success__close');
+const progress = document.querySelector('.progress');
+
+console.log(closeModal);
 
 // Tìm Kiếm
 searchInput.onkeyup = () => {
@@ -55,6 +64,45 @@ buttonSuggests.forEach((suggest) => {
         })
     }
 })
+
+function toggleModal() {
+    modal.classList.toggle('hide')
+}
+
+openModals.forEach((btn) => {
+    btn.addEventListener('click', toggleModal);
+})
+
+closeModal.addEventListener('click', toggleModal);
+
+btnSubmit.addEventListener('click', toggleModal);
+
+modal.addEventListener('click', function(e) {
+    if(e.target == e.currentTarget){
+        toggleModal()
+    }
+});
+
+btnSubmit.onclick = () => {
+    modalMessage.classList.add('active');
+    progress.classList.add('active');
+
+    setTimeout(() => {
+        modalMessage.classList.remove('active');
+    },5000);
+
+    setTimeout(() => {
+        progress.classList.remove('active')
+    }, 5300);
+}
+
+successClose.onclick = () => {
+    modalMessage.classList.remove('active');
+
+    setTimeout(() => {
+        progress.classList.remove('active')
+    },300);
+}
 
 
 
