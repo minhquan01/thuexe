@@ -173,7 +173,7 @@ section#search-suggest-button {
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
-    transition-delay: 0.3s;
+    transition-delay: 0.2s;
 }
 
 .item__action button {
