@@ -6,7 +6,18 @@
         top: calc(91% + 10px);
         transform: translateX(90%);
     }
+    section#search-suggest-button {
+        position: absolute;
+        top: 116%;
+        right: 15%;
+        left: calc(21% + 5px);
+    }
     .search-suggest-button--btn {
-        width: 120px;
+        width: 100px;
+        font-size: 14px;
+        padding: 10px;
+    }
+    .search-input-container {
+        height: 55px;
     }
 }
