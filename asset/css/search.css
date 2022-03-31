@@ -216,7 +216,7 @@ section#search-suggest-button {
     text-align: center;
 }
 
-.modal {
+.modal, .modal__more {
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
@@ -410,4 +410,79 @@ section#search-suggest-button {
     height: 100%;
     width: 100%;
     background-color: #1ac7b6;
+}
+
+.modal__more--moto {
+    background-color: #fff;
+    width: 70vw;
+    position: absolute;
+    top: 16%;
+    left: 14%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    border-radius: 10px;
+    animation: form ease-in 0.3s;
+}
+
+.modal__more--title {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.modal__more--title img {
+    width: 100%;
+    border: 1px dashed var(--primary-color);
+    border-radius: 5px;
+}
+
+.modal__more--content {
+    width: 50%;
+}
+
+.more__name {
+    color: var(--primary-color);
+}
+
+.more__price {
+    color: red;
+}
+
+.more__list {
+    list-style: none;
+    position: relative;
+}
+
+.more__list i {
+    position: absolute;
+    top: -3%;
+    right:-5px;
+    padding: 10px;
+    font-size: 20px;
+    transition: all linear 0.15s;
+    cursor: pointer;
+}
+
+.more__list i:hover {
+    transform: scale(1.2);
+    color: red;
+}
+
+.more__list h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.more__item {
+    display: flex;
+    margin: 20px 0;
+}
+
+.more__item--para {
+    width: 60%;
+}
+
+.more__item--sub-para {
+    width: 40%;
 }
