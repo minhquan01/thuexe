@@ -162,10 +162,13 @@ html {
 
 .title-slogan {
     color: #fff;
-    margin-top: 130px !important;
+    margin-top: -16%!important;
+
 }
 
 .title-slogan h1 {
+    width: 100%;
+    text-align: center;
     font-weight: 900;
     font-size: 3.5rem;
     line-height: 1.5;
