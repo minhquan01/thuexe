@@ -1,5 +1,28 @@
+@media (min-width: 1500px) {
+    .hide-on-pc {
+        display: none;
+    }
+    section#search-suggest-button {
+        position: absolute;
+        margin-top: 5%;
+        right: 16%;
+        left: calc(22% + 5px);
+    }
+    .search-input-container {
+        width: 527px;
+        height: 70px;
+    }
+    .search-results-details {
+        top: calc(91% + 9px);
+        transform: translateX(91%);
+    }
+    .search-suggest-button--btn {
+        font-size: 21px;
+        padding: 10px 21px;
+    }
+}
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width:1499px) {
     .hide-on-pc {
         display: none;
     }
