@@ -179,6 +179,9 @@
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
     }
+    .item__action {
+        transition-delay: 0.1s;
+    }
 
 }
 
@@ -377,6 +380,9 @@
         font-size: 11px;
         padding: 10px 4px;
     }
+    .item__action {
+        transition-delay: 0.1s;
+    }
 }
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -398,6 +404,9 @@
     }
     .item__title-tablet {
         margin-top: -4px !important;
+    }
+    .item__action {
+        transition-delay: 0.1s;
     }
     
 }
@@ -506,6 +515,9 @@
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
+    }
+    .item__action {
+        transition-delay: 0.1s;
     }
 }
 
@@ -694,7 +706,10 @@
         width: 50%;
     }
     .modal__more--moto {
-        top: 9%;
+        top: 10%;
+    }
+    .item__action {
+        transition-delay: 0.1s;
     }
 
 }
