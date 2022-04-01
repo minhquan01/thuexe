@@ -1,6 +1,16 @@
-@media (max-width: 1400px) {
+
+@media (min-width: 1024px) {
+    .hide-on-pc {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1300px){
+    .hide-on-low-pc {
+        display: none;
+    }
     .search-input-container {
-        width: 470px;
+        width: 460px;
     }
     .search-results-details {
         top: calc(91% + 10px);
@@ -18,6 +28,536 @@
         padding: 10px;
     }
     .search-input-container {
-        height: 55px;
+        height: 50px;
     }
+    .header__top-right--item {
+        font-size: 12px;
+    }
+    .header-image {
+        height: 35vh;
+        min-height: 0;
+        background-position: 80%;
+    }
+    .title-slogan h1 {
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+    .title-slogan {
+        margin-top: -20px !important;
+    }
+    .title-slogan p {
+        font-size: 13px;
+        margin: 0 60px;
+        text-align: center;
+    }
+    .inner img {
+        object-fit: cover;
+        width: 225px;
+        height: 182px;
+    }
+    .search-image-container {
+        height: 22vh;
+    }
+    .search-landing-image-text {
+        top: 63%;
+    }    
+    .search-landing-heading {
+        font-size: 54px;
+    }
+    .search-landing-heading-text {
+        font-size: 17px;
+    }
+    .search-results-details {
+        top: calc(88% + 10px);
+        transform: translateX(58%);
+    }
+    section#search-suggest-button {
+        right: 5%;
+        left: calc(12% + 5px);
+    }
+    .box-item {
+        width: calc(103% - 6px);
+    }
+    .item-moto {
+        width: calc(22% + 4px);
+        height: 304px;
+    }
+    .item__img-pclow img {
+        width: 100%;
+        height: 91% !important;
+        margin-top: 10px;
+    }
+    .item__title-pclow {
+        margin-top: 30px !important;
+    }
+    .item__action button {
+        padding: 10px 3px;
+    }
+
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    .nav__motab {
+        background-color: #fff;
+        height: 70px;
+        width: 100%;
+        z-index: 8;
+        box-shadow: -0px 1px 5px rgb(0, 0, 0, 0.3);
+    }
+    .motab__header{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
+    .header-image {
+        z-index: -1;
+        height: 45vh;
+        min-height: 0;
+        background-position: 80%;
+    }
+    .motab__logo{
+        display: block;
+        width: 175px;
+        height: 45px;
+        padding: 0;
+        background-position: left;
+        margin-left: -21%;
+    }
+    .motab__logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .nav__motab{
+        position: fixed;
+    }
+    .motab__menu {
+        font-size: 24px;
+        padding: 14px 24px;
+        font-weight: 900;
+    }
+    .motab__list {
+        list-style: none;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        text-align: start;
+        animation: move ease-in-out 0.2s;
+    }
+    @keyframes move {
+        from {
+            transform: translateY(-6px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    .motab__item {
+        width: 100%;
+        background-color:#f5f5f5;
+        text-decoration: none;
+        color: #000;
+        display: block;
+        margin: 1px 0;
+        font-weight: 500;
+        padding: 10px 0;
+        padding-left: 59px;
+    }
+    .motab__policy {
+        display: flex;
+        flex-direction: column;
+    }
+    .motab__policy span span {
+        margin-right: 72%;
+    }
+    .submotab__policy {
+        list-style: none;
+    }
+    .item__policy {
+        width: 100%;
+        border-top: 1px solid #fff;
+        padding: 5px 0 5px 20px;
+        animation: move ease-in-out 0.15s;
+    }
+    .item__policy:last-child {
+        padding: 5px 0 0 20px;
+    }
+    .hide {
+        display: none;
+    }
+    .title-slogan h1 {
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+    .title-slogan {
+        margin-top: -20px !important;
+    }
+    .title-slogan p {
+        font-size: 13px;
+        margin: 0 60px;
+        text-align: center;
+    }
+    .inner img {
+        object-fit: cover;
+        width: 319px;
+        height: 196px;
+    }
+    .category__car {
+        width: 100%;
+        height: 100%;
+    }
+    .category__car-paragraph {
+        width: 100%;
+        text-align: center;
+    }
+    .location__get--title::after {
+        right: calc(42% + 9px);
+    }
+    .category__car-title::after {
+        right: calc(40% + 9px);
+    }
+    .cta-bottom p {
+        padding-bottom: 16px;
+        margin-bottom: 0;
+    }
+    .car__motab {
+        width: 100%;
+        margin:-24px auto -52px;
+    }
+    .category__item {
+        height: 93%;
+    }
+    .procedure-container-heading::after {
+        right: calc(39% + 13px);
+    }
+    .procedure-inner {
+        width: 100%;
+        text-align: center;
+    }
+    .procedure-inner-title {
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+    .search-image-container {
+        height: 30vh;
+    }
+    .search-landing-image-text {
+        top: 67%;
+    }
+    .search-landing-heading {
+        font-size: 48px;
+        margin-bottom: -8px;
+    }
+    .search-landing-heading-text {
+        font-size: 15px;
+    }
+    .search-results-details {
+        top: calc(88% + 11px);
+        transform: translateX(40%);
+    }
+    .search-input-container {
+        width: 426px;
+        height: 50px;
+    }
+    section#search-suggest-button {
+        right: 0%;
+        left: calc(11% + 10px);
+    }
+    .search-suggest-button--btn {
+        margin: 0 3px;
+        font-size: 14px;
+    }
+    .search-header {
+        margin-bottom: 115px;
+    }
+    .item-moto {
+        width: calc(29% + 4px);
+        height: 279px;
+    }
+    .box-item {
+        width: 102%;
+    }
+    .item__action button {
+        font-size: 11px;
+        padding: 10px 4px;
+    }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .item__img-pclow img {
+        width: 100%;
+        height: 91% !important;
+        margin-top: 10px;
+    }
+    .item__title-pclow {
+        margin-top: 30px !important;
+    }
+    .item__img-tablet img {
+        width: 100% !important;
+        height: 100% !important;
+        margin-top: 10px;
+    }
+    .item__title-tablet {
+        margin-top: -4px !important;
+    }
+    
+}
+
+/* Mobile */
+@media(max-width: 739px) {
+    .wide {
+        width: 500px;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+    .nav__motab {
+        height: 60px;
+    }
+    .title-slogan h1 {
+        font-weight: 600;
+        font-size: 2.2rem;
+    }
+    .title-slogan p {
+        font-size: 13px;
+        margin: 0 60px;
+        text-align: center;
+    }
+    .inner img {
+        object-fit: cover;
+        width: 250px;
+        height: 161px;
+    }
+    .location__get {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .location__get--title::after {
+        right: calc(40% + 6px);
+    }
+    .category__car-text {
+        margin-bottom: 27px;
+        text-align: center;
+        padding-top: 41px;
+    }
+    .category__car-title::after {
+        right: calc(38% + 3px);
+    }
+    .category__car-title {
+        margin-bottom: 40px;
+    }
+    .motab__item {
+        padding: 7px 0 7px 38px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .motab__policy span span {
+        margin-right: 69%;
+    }
+    .search-input-container {
+        width: 351px;
+        height: 42px;
+    }
+    .search-results-details {
+        top: calc(87% + 10px);
+        transform: translateX(33%);
+    }
+    section#search-suggest-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        right: 14%;
+        left: calc(12% + 10px);
+    }
+    .search-suggest-button--btn {
+        margin-top: 10px;
+    }
+    .search-header {
+        margin-bottom: 170px;
+    }
+    .item-moto {
+        width: calc(45% + 4px);
+        height: 279px;
+    }
+    .motab__logo {
+        margin-left: -34px;
+    }
+    .item__img-pclow img {
+        width: 100%;
+        height: 91% !important;
+        margin-top: 10px;
+    }
+    .item__title-pclow {
+        margin-top: 30px !important;
+    }
+    .item__img-tablet img {
+        width: 100% !important;
+        height: 100% !important;
+        margin-top: -32px !important;
+    }
+    .item__title-tablet {
+        margin-top: -34px !important;
+    }
+}
+
+/* Mobile low */
+
+@media(max-width: 450px) {
+    .wide {
+        width: 340px;
+    }
+    .motab__item {
+        padding: 7px 0 7px 10px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .motab__policy span span {
+        margin-right: 57%;
+    }
+    .title-slogan h1 {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    .title-slogan p {
+        font-size: 12px;
+        margin: 0 60px;
+        text-align: center;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+    .header-image {
+        height: 33vh;
+    }
+    .location__get {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .location__get--title {
+        font-size: 20px;
+    }
+    .location__get--title::after {
+        right: calc(35% + 6px);
+        top: 29px;
+        height: 3px;
+        margin-bottom: 33px;
+    }
+    .c-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .inner::before {
+        width: 100%;
+        border-radius: 4px;
+    }
+    .inner img {
+        object-fit: cover;
+        width: 340px;
+        height: 195px;
+        border-radius: 4px;
+    }
+    .inner {
+        margin: 3px 0;
+    }
+    .inner-text__molow {
+        margin-right: 30px;
+    }
+    .category__car-paragraph {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+    .mess-chat, .zalo-chat {
+        z-index: 6;
+        right: 3px;
+    }
+    .zalo-chat {
+        bottom: 113px;
+    }
+    .mess-chat {
+        bottom: 57px;
+    }
+    .search-image-container {
+        height: 28vh;
+    }
+    .search-landing-heading {
+        font-size: 36px;
+        margin-bottom: -6px;
+    }
+    .search-landing-heading-text {
+        font-size: 12px;
+    }
+    .search-input-container {
+        width: 293px;
+        height: 41px;
+    }
+    .search-results-details {
+        top: calc(86% + 11px);
+        transform: translateX(12%);
+    }
+    section#search-suggest-button {
+        right: 2%;
+        left: calc(0% + 10px);
+    }
+    .search-suggest-button--btn {
+        margin-top: 7px;
+        font-size: 11px;
+    }
+    .search-header {
+        margin-bottom: 131px;
+    }
+    .item-moto {
+        width: calc(42% + 4px);
+        height: 248px;
+    }
+    .item__action {
+        margin-bottom: -187px;
+    }
+    .item-moto:hover .item__img {
+        transform: translateY(-20px) rotate(-20deg);
+    }
+    .item-moto:hover .item__title {
+        transform: translate(-15px, -10px);
+    }
+    
+    .item-moto:hover .item__price {
+        transform: translate(-28px, -10px);
+    }
+    .item__title, .item__price {
+        font-size: 16px;
+    }
+    .item__action button {
+        font-size: 10px;
+        padding: 8px 2px;
+        margin: 2px 0;
+    }
+    .item__action {
+        display: flex;
+        flex-direction: column;
+    }
+    .item__img-pclow img {
+        width: 100%;
+        height: 86% !important;
+        margin-top: 10px;
+    }
+    .item__title-pclow {
+        margin-top: -18px !important;
+    }
+
 }

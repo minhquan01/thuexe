@@ -11,12 +11,52 @@
     <link rel="stylesheet" href="./asset/css/main.css">
     <link rel="stylesheet" href="./asset/css/grid.css">
     <link rel="stylesheet" href="./asset/font/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
     
 </head>
 <body>
     <!-- Phần Đầu -->
     <div class="header" >
-        <div class="nav" id="nav">
+        <div class="nav__motab hide-on-pc">
+            <div class="grid wide motab__header">
+                <div class="motab__left">
+                    <div class="motab__left-logo">
+                        <a href="/" class="motab__logo">
+                            <img src="./asset/img/logo/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="motab__right">
+                    <div class="motab__menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul class="motab__list hide">
+                        <li class="motab__item">TRANG CHỦ</li>
+                            <li class="motab__item">BẢNG GIÁ</li>
+                            <li class="motab__item motab__policy">
+                                <span>
+                                    <span>
+                                        CHÍNH SÁCH
+                                    </span> 
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                                <ul class="submotab__policy">
+                                    <li class="item__policy">-CHÍNH SÁCH THUÊ XE MÁY</li>
+                                    <li class="item__policy">-CHÍNH SÁCH KHÁCH HÀNG THÂN THIẾT</li>
+                                </ul>
+                            </li>
+                            <li class="motab__item">GIỚI THIỆU</li>
+                            <li class="motab__item">LIÊN HỆ</li>
+                            <a href="./search.html" class="motab__item">DANH MỤC XE 
+                            </a>
+                            <li class="motab__item">Đăng Ký</li>
+                            <li class="motab__item">Đăng Nhập</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="nav hide-on-mobile-tablet" id="nav">
             <div class="grid wide">
                 <div class="header__top">
                     <div class="header__top-left">
@@ -111,28 +151,28 @@
         <h2 class="location__get--title">THUÊ XE MÁY TẠI</h2>
         <div class="grid wide">
             <div class="row">
-                <div class="col l-3">
+                <div class="col l-3 m-6 c-6">
                     <div class="inner">
                         <img src="./asset/img/img-loca/nguhanhson.jpg" class="thumnal" alt="">
                         <span class="inner-text">Ngũ Hành <br>Sơn</span>
                     </div>
                 </div>
-                <div class="col l-3">
+                <div class="col l-3 m-6 c-6">
                     <div class="inner">
                         <img src="./asset/img/img-loca/sontrajpg.jpg" class="thumnal" alt="">
                         <span class="inner-text">Sơn Trà</span>
                     </div>
                 </div>
-                <div class="col l-3">
+                <div class="col l-3 m-6 c-6">
                     <div class="inner">
                         <img src="./asset/img/img-loca/lienchieu.jpg" class="thumnal" alt="">
                         <span class="inner-text">Liên Chiểu</span>
                     </div>
                 </div>
-                <div class="col l-3">
+                <div class="col l-3 m-6 c-6">
                     <div class="inner">
                         <img src="./asset/img/img-loca/camle.jpg" class="thumnal" alt="">
-                        <span class="inner-text">Cẩm Lệ</span>
+                        <span class="inner-text inner-text__molow">Cẩm Lệ</span>
                     </div>
                 </div>
             </div>
@@ -146,7 +186,7 @@
             <span class="category__car-paragraph">Toàn bộ xe máy cho thuê của chúng tôi là xe được mua mới 100%, được đăng ký chính chủ. Ngoài ra, các xe sau khi kết thúc hợp đồng với khách sẽ được kiểm tra, bảo dưỡng, thay thế các bộ phận hỏng hóc và phải đạt chuẩn an toàn xe trước khi giao cho khách hàng mới.</span>
         </div>
             <div class="row">
-                <div class="col l-4">
+                <div class="col l-4 m-6 c-12">
                     <div class="category__item">
                         <div class="category__item-header">
                             <h3 class="category__item-header--title">
@@ -185,7 +225,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col l-4">
+                <div class="col l-4 m-6 c-12">
                     <div class="category__item">
                         <div class="category__item-header">
                             <h3 class="category__item-header--title">
@@ -224,7 +264,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col l-4">
+                <div class="col l-4 m-6 c-12 car__motab">
                     <div class="category__item">
                         <div class="category__item-header">
                             <h3 class="category__item-header--title">
@@ -506,5 +546,6 @@
     </div>
 
     <script src="./app.js"></script>
+    <script src="./reponsive.js"></script>
 </body>
 </html>

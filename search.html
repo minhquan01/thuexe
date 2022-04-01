@@ -18,7 +18,46 @@
 <body>
     <!-- Thanh Đầu -->
     <div class="header" >
-        <div class="nav" id="nav">
+        <div class="nav__motab hide-on-pc">
+            <div class="grid wide motab__header">
+                <div class="motab__left">
+                    <div class="motab__left-logo">
+                        <a href="/" class="motab__logo">
+                            <img src="./asset/img/logo/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="motab__right">
+                    <div class="motab__menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul class="motab__list hide">
+                        <li class="motab__item">TRANG CHỦ</li>
+                            <li class="motab__item">BẢNG GIÁ</li>
+                            <li class="motab__item motab__policy">
+                                <span>
+                                    <span>
+                                        CHÍNH SÁCH
+                                    </span> 
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                                <ul class="submotab__policy">
+                                    <li class="item__policy">-CHÍNH SÁCH THUÊ XE MÁY</li>
+                                    <li class="item__policy">-CHÍNH SÁCH KHÁCH HÀNG THÂN THIẾT</li>
+                                </ul>
+                            </li>
+                            <li class="motab__item">GIỚI THIỆU</li>
+                            <li class="motab__item">LIÊN HỆ</li>
+                            <a href="./search.html" class="motab__item">DANH MỤC XE 
+                            </a>
+                            <li class="motab__item">Đăng Ký</li>
+                            <li class="motab__item">Đăng Nhập</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="nav hide-on-mobile-tablet" id="nav">
             <div class="grid wide">
                 <div class="header__top">
                     <div class="header__top-left">
@@ -264,10 +303,10 @@
                             </div>
                         </div>
                         <div class="item-moto" data-item="sym" data-price="">
-                            <div class="item__img">
+                            <div class="item__img item__img-pclow">
                                 <img src="./asset/img/img-search/Sym/angel 110r.png" style="height:169px; margin-top:-12px;" alt="">
                             </div>
-                            <div class="item__title">
+                            <div class="item__title item__title-pclow">
                                 Angel 110R 
                             </div>
                             <div class="item__price">
@@ -309,10 +348,10 @@
                             </div>
                         </div>
                         <div class="item-moto" data-item="sym" data-price="">
-                            <div class="item__img">
+                            <div class="item__img item__img-tablet">
                                 <img src="./asset/img/img-search/Sym/husky-125.png" style="width: 90%; height: 173px; margin-top: -14px;" alt="">
                             </div>
-                            <div class="item__title">
+                            <div class="item__title item__title-tablet">
                                 Husky 125
                             </div>
                             <div class="item__price">
@@ -324,10 +363,10 @@
                             </div>
                         </div>
                         <div class="item-moto" data-item="yamaha" data-price="">
-                            <div class="item__img">
+                            <div class="item__img item__img-pclow">
                                 <img src="./asset/img/img-search/Yamaha/2017_FZ-07_ABS_l-650x400.png" style="height: 149px;" alt="">
                             </div>
-                            <div class="item__title" style="margin-top: 39px;">
+                            <div class="item__title item__title-pclow" style="margin-top: 39px;">
                                 FZ 07 ABS 
                             </div>
                             <div class="item__price">
@@ -1485,7 +1524,7 @@
             </div>
         </div>
     </div>
-
+        <script src="./reponsive.js"></script>
         <script src="./app.js"></script>
         <script src="./search.js"></script>
         <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
