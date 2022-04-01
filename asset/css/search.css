@@ -84,7 +84,7 @@
 
 section#search-suggest-button {
     position: absolute;
-    top: 116%;
+    margin-top: 10%;
     right: 18%;
     left: calc(26% + 5px);
 }
