@@ -3,6 +3,20 @@
     .hide-on-pc {
         display: none;
     }
+    .search-input-container {
+        width: 468px;
+        height: 65px;
+    }
+    .search-results-details {
+        top: calc(90% + 9px);
+        transform: translateX(92%);
+    }
+    section#search-suggest-button {
+        position: absolute;
+        margin-top: 5%;
+        right: 16%;
+        left: calc(22% + 5px);
+    }
 }
 
 @media (min-width: 1061px) and (max-width: 1300px){
