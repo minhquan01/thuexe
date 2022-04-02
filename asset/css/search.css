@@ -144,6 +144,14 @@ section#search-suggest-button {
     cursor: pointer;
 }
 
+.item__cart {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+    z-index: 10;
+}
+
 .item__img {
     width: 100%;
     transition: 0.5s ;
@@ -163,6 +171,7 @@ section#search-suggest-button {
 
 .item__price {
     margin-bottom: 10px;
+    display: flex;  
 }
 
 .item__title {
@@ -218,13 +227,14 @@ section#search-suggest-button {
     text-align: center;
 }
 
-.modal, .modal__more {
+.modal, .modal__more, .modal__dup {
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100vw;
+    z-index: 12;
 }
 
 .form__rent {
@@ -488,3 +498,117 @@ section#search-suggest-button {
 .more__item--sub-para {
     width: 40%;
 }
+
+.cart {
+    width: 50%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.cart table {
+    width: 100%;
+}
+
+.cart form {
+    padding:0 10px;
+}
+
+.cart table tr th:first-child {
+    width: 1px;
+}
+
+.cart table tr th:last-child {
+    text-align: end;
+}
+
+.cart__delete {
+    text-align: end;
+}
+
+.cart table tbody td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+}
+
+.cart__item {
+    display: flex;
+    align-items: center;
+}
+
+.cart__item img {
+    width: 70px;
+    border: 1px dashed #4daf54;
+    border-radius: 4px;
+}
+
+.cart__amount {
+    width: 40px;
+    outline: none;
+}
+
+.cart__delete {
+    cursor: pointer;
+}
+
+.price__total p {
+    font-weight: 700;
+    text-align: end;
+}
+
+.modal__text {
+    width: 360px;
+    min-height: 100px;
+    padding: 50px 24px;
+    text-align: center;
+    background: #fff;
+    border-radius: 2px;
+    margin: 24px;
+    box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+    position: relative;
+    top: 30%;
+    margin: auto;
+    border-radius: 6px;
+    animation: form ease-in 0.3s;
+}
+
+.modal__text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.modal__dup-submit {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all linear 0.2s;
+}
+
+.modal__dup-submit:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.modal__dup-close {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    transition: all linear 0.2s;
+}
+
+.modal__dup-close:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
