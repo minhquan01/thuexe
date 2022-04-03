@@ -11,6 +11,7 @@ const modalMessage = document.querySelector('.modal__message');
 const successClose = document.querySelector('.success__close');
 const progress = document.querySelector('.progress');
 const boxItems = document.querySelector('.box-item');
+const cartBtn = document.querySelector('.cart button');
 
 const modalMore = document.querySelector('.modal__more');
 const closeMonkey = document.querySelector('.close__monkey');
@@ -140,6 +141,9 @@ openModals.forEach((btn) => {
 closeModal.addEventListener('click', toggleModal);
 
 btnSubmit.addEventListener('click', toggleModal);
+
+cartBtn.addEventListener('click', toggleModal);
+
 
 modal.addEventListener('click', function(e) {
     if(e.target == e.currentTarget){

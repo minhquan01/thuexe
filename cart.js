@@ -2,7 +2,26 @@ const itemCart = document.querySelectorAll('.item__cart');
 const modalDup = document.querySelector('.modal__dup');
 const dupClose = document.querySelector('.modal__dup-close');
 const dupSubmit = document.querySelector('.modal__dup-submit');
+const cartBody = document.querySelectorAll('.cart table tbody');
+const cartClose = document.querySelector('.cart i');
+const cartSubmit = document.querySelector('.cart button');
+const modalCart = document.querySelector('.modal__cart');
+const cart = document.querySelector('.cart__total');
 
+
+
+
+function toggleModalCart() {
+    modalCart.classList.toggle('hide')
+}
+cart.addEventListener('click', toggleModalCart) 
+cartClose.addEventListener('click', toggleModalCart) 
+cartSubmit.addEventListener('click', toggleModalCart)
+modalCart.addEventListener('click', function(e) {
+    if(e.target == e.currentTarget){
+        toggleModalCart()
+    }
+})
 
 function toggleModalDup() {
     modalDup.classList.toggle('hide')
@@ -38,7 +57,7 @@ function addCart(productImg, productName, productPrice) {
             return
         }
     }
-    var trContent = '<td class="cart__item"><img src="'+productImg+'" alt=""></td><td class="cart__name">'+productName+'</td><td style="display:flex;"><span>'+productPrice+'</span><p>₫</p></td><td><input class="cart__amount" type="number" value="1" min="1"></td><td class="cart__delete">Xóa</td>'
+    var trContent = '<td class="cart__item"><img src="'+productImg+'" alt=""></td><td class="cart__name" style="text-align: initial;">'+productName+'</td><td style="display:flex; justify-content: center;"><span>'+productPrice+'</span><p>₫</p></td><td><input class="cart__amount" type="number" value="1" min="1"></td><td class="cart__delete" style="text-align: end;">Xóa</td>'
     addTr.innerHTML = trContent
     var cartTable = document.querySelector('.cart table tbody')
     cartTable.append(addTr)

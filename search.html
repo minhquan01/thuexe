@@ -503,31 +503,41 @@
                         </div>
                     </div>
                     <!-- Giỏ Hàng -->
-                    <section class="cart">
-                        <h2>Giỏ Hàng</h2>
-                        <form action="">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Xe</th>
-                                        <th>Tên Xe</th>
-                                        <th>Giá</th>
-                                        <th>Số Lượng</th>
-                                        <th>Chọn</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    
-                                </tbody>
-                            </table>
-                            <div class="price__total">
-                                <p>Tổng tiền: 
-                                    <span>0</span>
-                                    <sup>đ</sup>
-                                </p>
-                            </div>
-                        </form>
-                    </section>
+                    <div class="modal__cart hide">
+                        <section class="cart">
+                            <i class="fa-solid fa-xmark"></i>
+                            <h2>Giỏ Hàng</h2>
+                            <form action="">
+                                <table class="cart__table">
+                                    <thead>
+                                        <tr>
+                                            <th style="margin-left: 22px;">Xe</th>
+                                            <th>Tên Xe</th>
+                                            <th>Giá</th>
+                                            <th>Số Lượng</th>
+                                            <th>Chọn</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                </table>
+                                <div class="price__total">
+                                    <p>Tổng tiền: 
+                                        <span>0</span>
+                                        <sup>đ</sup>
+                                    </p>
+                                </div>
+                            </form>
+                            <button>
+                                Thuê Xe
+                            </button>
+                        </section>
+                    </div>
+                    <!-- Giỏ Hàng -->
+                    <button class="cart__total">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
                     <!-- Trùng xe -->
                     <div class="modal__dup hide">
                         <div class="modal__text">
@@ -1541,6 +1551,7 @@
             </div>
         </div>
     </div>
+    
     
     <!-- End -->
     <div class="footer">
