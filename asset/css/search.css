@@ -559,7 +559,7 @@ section#search-suggest-button {
 
 .price__total p {
     font-weight: 700;
-    text-align: end;
+    text-align: center;
 }
 
 .modal__text {
