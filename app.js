@@ -1,3 +1,8 @@
+const greetingClose = document.querySelector('.modal__greeting-close');
+const greetingSubmit = document.querySelector('.modal__greeting-submit');
+const modalGreeting = document.querySelector('.modal__greeting');
+
+
 
 var nav = document.getElementById("nav");
 window.onscroll = function() {
@@ -9,3 +14,12 @@ window.onscroll = function() {
         nav.style.boxShadow ="-1px 1px 1px transparent";
     }
 };
+
+window.addEventListener('load', toggleModalGreeting)
+
+function toggleModalGreeting() {
+    modalGreeting.classList.toggle('hide')
+}
+greetingClose.addEventListener('click', toggleModalGreeting);
+
+greetingSubmit.addEventListener('click', toggleModalGreeting);
